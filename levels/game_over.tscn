@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://dideix8c3cxig"]
+
+[ext_resource type="Script" path="res://levels/game_over.gd" id="1_qdmj7"]
+
+[node name="Node2D" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_qdmj7")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 101.0
+offset_top = 168.0
+offset_right = 1196.0
+offset_bottom = 441.0
+theme_override_colors/default_color = Color(0.921569, 0.705882, 0, 1)
+theme_override_font_sizes/normal_font_size = 200
+text = "Game Over"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 315.0
+offset_top = 455.0
+offset_right = 957.0
+offset_bottom = 571.0
+theme_override_font_sizes/font_size = 60
+text = "Replay"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

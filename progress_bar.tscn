@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cm1gpi30fcmy"]
+
+[sub_resource type="Theme" id="Theme_jgwbf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6lx8a"]
+bg_color = Color(0, 0.713726, 0.439216, 1)
+
+[node name="ProgressBar" type="ProgressBar"]
+z_index = 6
+offset_right = 191.0
+offset_bottom = 27.0
+tooltip_text = "HP"
+theme = SubResource("Theme_jgwbf")
+theme_override_colors/font_color = Color(0.2, 0.886275, 0.635294, 1)
+theme_override_styles/fill = SubResource("StyleBoxFlat_6lx8a")
+rounded = true
+show_percentage = false
